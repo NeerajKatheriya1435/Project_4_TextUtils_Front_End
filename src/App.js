@@ -21,9 +21,9 @@ function App() {
     if (mode === "light") {
       setMode("dark")
       setswitch1("Disable Darkmode")
-      document.body.style.backgroundColor = "#562ba3"
+      document.body.style.backgroundColor = "#504762"
       setMystyle1({
-        backgroundColor: "#562ba3",
+        backgroundColor: "#504762",
         color: "white"
       })
       setAlert("Dark mode has been enabled ! ", "success")

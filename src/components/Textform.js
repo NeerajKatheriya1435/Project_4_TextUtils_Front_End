@@ -36,34 +36,34 @@ export default function Textform(props) {
     return (
         <>
             <div className="container" >
-                <h1 style={props.mystyle1}>{props.heading}</h1>
+                <h2 style={props.mystyle1}>{props.heading}</h2>
                 <div className="mb-2">
                     <textarea className="form-control" style={props.mystyle1} value={text} onChange={handleonchange} id="exampleFormControlTextarea1" rows="12"></textarea>
                 </div>
-                <button disabled={(text.length===0)} className="btn btn-danger mx-2 my-2" onClick={handleonclickUpper}>
+                <button disabled={(text.length===0)} className="btn btn-secondary mx-2 my-2" onClick={handleonclickUpper}>
                     Convert to Uppercase
                 </button>
-                <button disabled={(text.length===0)} className="btn btn-danger mx-2 my-2" onClick={handleonclickLower}>
+                <button disabled={(text.length===0)} className="btn btn-secondary mx-2 my-2" onClick={handleonclickLower}>
                     Convert to Lowercase
                 </button>
-                <button disabled={(text.length===0)} className="btn btn-danger mx-2 my-2" onClick={handleonclickCopy}>
+                <button disabled={(text.length===0)} className="btn btn-secondary mx-2 my-2" onClick={handleonclickCopy}>
                     Copy Text
                 </button>
-                <button disabled={(text.length===0)} className="btn btn-danger mx-2 my-2" onClick={handleonclickClear}>
+                <button disabled={(text.length===0)} className="btn btn-secondary mx-2 my-2" onClick={handleonclickClear}>
                     Clear Text
                 </button>
-                <button disabled={(text.length===0)} className="btn btn-danger mx-2 my-2" onClick={handleonclickExspace}>
+                <button disabled={(text.length===0)} className="btn btn-secondary mx-2 my-2" onClick={handleonclickExspace}>
                     Remove Extra Space
                 </button>
             </div>
             <div className="container" style={props.mystyle1}>
-                <h4 className="my-2">
+                <h5 className="my-2">
                     Your text summary
-                </h4>
+                </h5>
                 <p>Total words: {text.split(" ").filter((element)=>{return element.length!==0}).length} & The total characters: {text.length} </p>
-                <h4>
+                <h5>
                     Your content preview
-                </h4>
+                </h5>
                 <p>{text}</p>
             </div>
         </>
